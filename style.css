@@ -20,6 +20,8 @@ body {
     width: 300px;
 }
 
+
+
 #homeBar a {
     margin: 8px;
     font-size: larger;
@@ -27,6 +29,39 @@ body {
     color: aliceblue;
     text-decoration: none;
     text-transform: capitalize;
+
+}
+
+.navItem {
+    position: relative;
+    display: inline-block;
+}
+
+.navDropdown {
+    width: 200px;
+    position: absolute;
+    background-color: black;
+    display: none;
+    padding: 20px;
+    /* box-sizing: border-box; */
+}
+
+.navDropdown a {
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+
+}
+
+.navItem:hover .navDropdown {
+    color: #6db33f;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.changeColorToGreenWhenHoverOver:hover {
+    color: 6db33f;
 }
 
 .main {
